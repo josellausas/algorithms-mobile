@@ -12,14 +12,17 @@ const navOptions = { initialRouteName: "Home" };
 const AppNavigator = createStackNavigator(screens, navOptions);
 const AppContainer = createAppContainer(AppNavigator)
 
+
 interface AppProps {}
 interface AppState {}
 class App extends React.Component<AppProps,AppState> {
   usingHermes: boolean;
+  
   constructor(props:AppProps){
     super(props);
     this.usingHermes = typeof HermesInternal === 'object' && HermesInternal !== null;
   }
+  
   render() {
     return <AppContainer />
   }

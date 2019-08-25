@@ -8,10 +8,14 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "bugsnag-react-native": "^2.22.6",
+    "eslint": "5",
     "react": "16.8.6",
     "react-native": "0.60.5",
+    "react-native-config": "^0.11.7",
     "react-native-gesture-handler": "^1.4.1",
     "react-native-reanimated": "^1.2.0",
+    "react-native-screens": "^1.0.0-alpha.23",
     "react-navigation": "^3.12.0"
   },
   "devDependencies": {
@@ -23,17 +27,16 @@
     "@types/react-native": "^0.60.8",
     "@types/react-test-renderer": "^16.9.0",
     "babel-jest": "^24.9.0",
-    "eslint": "^6.2.2",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "husky": "^3.0.4",
     "jest": "^24.9.0",
-    "jest-preset-typescript-react-native": "^1.2.0",
     "jetifier": "^1.6.4",
     "metro-react-native-babel-preset": "^0.56.0",
     "react-test-renderer": "16.8.6",
     "typescript": "^3.5.3"
   },
   "jest": {
-    "preset": "jest-preset-typescript-react-native"
+    "preset": "react-native"
   },
   "husky": {
     "hooks": {
